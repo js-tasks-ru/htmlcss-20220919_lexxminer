@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-color: red;
+    color: white;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.25em 0;
+    font-weight: 100;
+}
+
+header nav {
+    background-color: blueviolet;
+    padding: 0.5em 0;
+} 
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+main {
+    background-color: darkcyan;
+    padding: 1px;
+}
+
+main article {
+    background-color: blanchedalmond;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+main article h2 {
+    margin: 0.25em 1em;
+    margin-top: 0.5em;
+    font-weight: 100;
+}
+
+main article .list {
+    margin-top: 0;
+}
+
+footer {
+    background-color: deeppink;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+p.footer {
+    margin: 0;
+    padding: 0.25em;
+    color: white;
+    font-weight: 100;
+}
