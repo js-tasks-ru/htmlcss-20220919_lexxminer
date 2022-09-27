@@ -1,1 +1,86 @@
 /* Стилизация кнопки */
+
+.grid {
+    display: grid;
+    grid-template-areas: "defp defs defa"
+        "disp diss disa";
+    gap: 10px;
+
+    grid-template-columns: 250px 250px 250px;
+}
+
+.button {
+    border-radius: 8px;
+    border: 0;
+    width: fit-content;
+}
+
+.button__title {
+    padding: 15px 65px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.button_primary {
+    background: #4263EB;
+    color: #FFFFFF;
+    grid-area: defp;
+    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.button_secondary {
+    background: #7048E8;
+    color: #FFFFFF;
+    grid-area: defs;
+    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.button_alternate {
+    background-color: white;
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+    color: #495057;
+    grid-area: defa;
+    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+.button_primary:hover {
+    background: #2342C0;
+    color: #FFFFFF;
+}
+
+.button_secondary:hover {
+    background: #5028C6;
+    color: #FFFFFF;
+}
+
+.button_alternate:hover {
+    background-color: white;
+    border: 1px solid #212429;
+    border-radius: 8px;
+    color: #495057;
+}
+
+.button_primary:disabled {
+    grid-area: disp;
+}
+
+.button_secondary:disabled {
+    grid-area: diss;
+}
+
+.button_alternate:disabled {
+    grid-area: disa;
+}
+
