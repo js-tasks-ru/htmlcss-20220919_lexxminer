@@ -84,18 +84,3 @@ details[open]>summary .accordion__marker {
     margin-bottom: 0px;
 }
 
-.accordionLabel {
-
-    margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 46px;
-    /* identical to box height */
-
-
-    /* Black */
-
-    color: #212429;
-}
