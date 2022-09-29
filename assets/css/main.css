@@ -1,4 +1,11 @@
 @import '../fonts/fonts.css';
+@import '../../components/Header/Header.css';
+@import '../../components/Content/Content.css';
+@import '../../components/Footer/Footer.css';
+@import '../../components/Container/Container.css';
+@import '../../components/Page/Page.css';
+
+
 
 :root {
     --white: #ffffff;
@@ -21,4 +28,9 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.divider {
+    height: 1px;
+    background: #DDE2E5;
 }
