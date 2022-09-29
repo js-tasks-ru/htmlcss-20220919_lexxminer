@@ -1,1 +1,101 @@
 /* Стилизация аккордеона */
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+    display: none
+}
+
+/* Убираем стандартный маркер Firefox */
+details>summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 666px;
+    margin: 23px auto;
+}
+
+details>summary p {
+    margin: 0;
+}
+
+details>summary .accordion__marker {
+    content: url(./assets/arrow/Vector.svg);
+    font-family: "Font Awesome 5 free";
+}
+
+details[open]>summary {
+    margin-bottom: 16px;
+}
+
+details[open]>summary .accordion__marker {
+    transform: rotate(180deg);
+}
+
+.accordion {
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+
+    min-width: 730px;
+    min-height: fit-content;
+    background: #FFFFFF;
+    /* Gray 3 */
+
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+}
+
+.accordion__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Black */
+
+    color: #212429;
+
+}
+
+.accordion__content {
+
+    max-width: 666px;
+    margin: 0 auto 32px;
+
+    /* p */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #495057;
+}
+
+
+.accordion__content p:last-child {
+    /* p */
+    margin-bottom: 0px;
+}
+
+.accordionLabel {
+
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    /* identical to box height */
+
+
+    /* Black */
+
+    color: #212429;
+}
