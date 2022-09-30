@@ -4,9 +4,8 @@
 /* Убираем стандартный маркер */
 .accordion {
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
 
+    /* display: inline-block; */
 
     /* min-width: 730px; */
     min-height: fit-content;
