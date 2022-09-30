@@ -76,8 +76,9 @@
     box-sizing: border-box;
     background-color: var(--blue-secondary);
     flex-grow: 1;
-    padding: 5px;
+    /* padding: 0px; */
     margin-right: 1px;
+    min-height: 0%;
 }
 .histogram__column:last-child{
     margin-right: 0;
