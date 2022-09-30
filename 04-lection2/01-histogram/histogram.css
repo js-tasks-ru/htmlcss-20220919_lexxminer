@@ -1,0 +1,84 @@
+.histogram {
+    box-sizing: border-box;
+    background: var(--white);
+    /* Gray 3 */
+
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 16px 24px 24px;
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.histogram__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Black */
+
+    color: var(--black);
+
+    opacity: 0.8;
+}
+
+.histogram__button {
+    /* Сброс стилей для кнопки */
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: right;
+    color: var(--blue-secondary);
+}
+
+.histogram__total-count {
+    display: block;
+    margin-top: 6px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+    /* Black */
+    color: var(--black);
+}
+
+.histogram__diagram {
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.histogram__column {
+    box-sizing: border-box;
+    background-color: var(--blue-secondary);
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 1px;
+}
+.histogram__column:last-child{
+    margin-right: 0;
+}
