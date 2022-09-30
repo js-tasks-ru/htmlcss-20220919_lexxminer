@@ -1,44 +1,14 @@
 /* Стилизация аккордеона */
 
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-    display: none
-}
 
-/* Убираем стандартный маркер Firefox */
-details>summary {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 666px;
-    margin: 23px auto;
-}
-
-details>summary p {
-    margin: 0;
-}
-
-details>summary .accordion__marker {
-    content: url(./assets/arrow/Vector.svg);
-    font-family: "Font Awesome 5 free";
-}
-
-details[open]>summary {
-    margin-bottom: 16px;
-}
-
-details[open]>summary .accordion__marker {
-    transform: rotate(180deg);
-}
-
+/* Убираем стандартный маркер */
 .accordion {
-
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 
 
-    min-width: 730px;
+    /* min-width: 730px; */
     min-height: fit-content;
     background: #FFFFFF;
     /* Gray 3 */
@@ -47,7 +17,16 @@ details[open]>summary .accordion__marker {
     border-radius: 8px;
 }
 
+.accordion__summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 32px;
+}
+
 .accordion__title {
+    margin: 0;
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -62,10 +41,25 @@ details[open]>summary .accordion__marker {
 
 }
 
+.accordion__marker {
+    content: url(./assets/arrow/Vector.svg);
+    margin: 0;
+}
+
+
+.accordion[open] > .accordion__summary {
+    margin-bottom: 16px;
+}
+
+.accordion[open] .accordion__marker {
+    transform: rotate(180deg);
+}
+
+
 .accordion__content {
 
-    max-width: 666px;
-    margin: 0 auto 32px;
+    /* max-width: 666px; */
+    padding: 0 32px 32px;
 
     /* p */
 
@@ -79,7 +73,7 @@ details[open]>summary .accordion__marker {
 }
 
 
-.accordion__content p:last-child {
+.accordion__item:last-child {
     /* p */
     margin-bottom: 0px;
 }
