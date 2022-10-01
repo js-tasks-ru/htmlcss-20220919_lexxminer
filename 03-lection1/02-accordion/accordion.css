@@ -2,8 +2,10 @@
 
 
 /* Убираем стандартный маркер */
-.accordion {
+.accordion__item {
     box-sizing: border-box;
+
+    margin-bottom: 1px;
 
     /* display: inline-block; */
 
@@ -72,7 +74,7 @@
 }
 
 
-.accordion__item:last-child {
+.accordion__text:last-child {
     /* p */
     margin-bottom: 0px;
 }
