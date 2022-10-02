@@ -1,1 +1,81 @@
 /* Стилизация аккордеона */
+
+
+/* Убираем стандартный маркер */
+.accordion__item {
+    box-sizing: border-box;
+
+    margin-bottom: 1px;
+
+    /* display: inline-block; */
+
+    /* min-width: 730px; */
+    min-height: fit-content;
+    background: #FFFFFF;
+    /* Gray 3 */
+
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+}
+
+.accordion__summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 32px;
+}
+
+.accordion__title {
+    margin: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Black */
+
+    color: #212429;
+
+}
+
+.accordion__marker {
+    content: url(./assets/arrow/Vector.svg);
+    margin: 0;
+}
+
+
+.accordion[open] > .accordion__summary {
+    margin-bottom: 16px;
+}
+
+.accordion[open] .accordion__marker {
+    transform: rotate(180deg);
+}
+
+
+.accordion__content {
+
+    /* max-width: 666px; */
+    padding: 0 32px 32px;
+
+    /* p */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #495057;
+}
+
+
+.accordion__text:last-child {
+    /* p */
+    margin-bottom: 0px;
+}
+
