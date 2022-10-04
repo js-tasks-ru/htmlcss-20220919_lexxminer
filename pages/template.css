@@ -1,0 +1,32 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header {
+    background: #FFFFFF;
+    height: 82px;
+}
+
+.main {
+    background: #F9FAFC;
+    flex-grow: 1;
+}
+
+.components {
+    display: grid;
+    grid-template-columns: 229px 1fr;
+    height: 100%;
+}
+
+.footer {
+    background-color: red;
+    height: 166px;
+}
