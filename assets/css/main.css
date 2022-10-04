@@ -18,6 +18,9 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --dark-blue-1: #334D6E;
+    --blue-alt-1: #4263EB;
+    --blue-light-1: #a0b1f531;
 
     --error: var(--red);
     --success: var(--blue);
