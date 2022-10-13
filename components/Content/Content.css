@@ -1,13 +1,40 @@
 .preview {
     background: #F9FAFC;
-    padding-bottom: 67px;
+    padding-bottom: 22px;
+}
+
+.preview_detail {
+    background: var(--white);
+    flex-grow: 1;
 }
 
 .preview__cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 67px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(164px, 1fr));;
+    gap: 22px 16px;
+    margin-top: 22px;
     /* margin-bottom: 67px; */ 
     /* выпадает этот отступ, вместо марджина здесь задал паддинг в .pewview выше */
+}
+
+@media screen and (min-width: 1280px) {
+    .preview {
+        background: #F9FAFC;
+        padding-bottom: 67px;
+    }
+    
+    .preview_detail {
+        background: #F9FAFC;
+        flex-grow: 1;
+    }
+    
+    .preview__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 67px;
+        /* margin-bottom: 67px; */ 
+        /* выпадает этот отступ, вместо марджина здесь задал паддинг в .pewview выше */
+    }
+    
 }
