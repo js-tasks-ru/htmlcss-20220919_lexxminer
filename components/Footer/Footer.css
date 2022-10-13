@@ -1,75 +1,73 @@
 .footer {
-    display: none;
+  display: none;
 }
 
 .footer_minimized {
-    display: none;
+  display: none;
 }
 
-
-
 @media screen and (min-width: 1280px) {
-    .footer {display: block;}
+  .footer {
+    display: block;
+  }
 
-    .footer_minimized {
-        display: block;
-        background: #F9FAFC;
-    }
-    
-    .footer__title {
-        text-align: center;
-        margin: 0 auto;
-        color: black;
-        padding-top: 71px;
-    
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 38px;
-        line-height: 48px;
-        /* identical to box height, or 126% */
-    }
-    
-    .footer__title_minimized {
-        width: fit-content;
-        margin-top: 92px;
-        margin-bottom: 56px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0;
-    
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        /* identical to box height, or 150% */
-    
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    
-        /* Gray 3 */
-    
-        color: #ACB5BD;
-    }
-    
-    
-    
-    .footer__description {
-        padding-top: 32px;
-        padding-bottom: 136px;
-    
-        max-width: 640px;
-    
-        /* p */
-        margin: 0 auto;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        /* or 150% */
-    
-        text-align: center;
-    }
+  .footer_minimized {
+    display: block;
+    background: #f9fafc;
+  }
+
+  .footer__title {
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    padding-top: 71px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    /* identical to box height, or 126% */
+  }
+
+  .footer__title_minimized {
+    width: fit-content;
+    margin-top: 92px;
+    margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    /* Gray 3 */
+
+    color: #acb5bd;
+  }
+
+  .footer__description {
+    padding-top: 32px;
+    padding-bottom: 136px;
+
+    max-width: 640px;
+
+    /* p */
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    text-align: center;
+  }
 }
