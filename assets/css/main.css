@@ -1,6 +1,7 @@
 @import '../fonts/fonts.css';
 @import '../../components/Header/Header.css';
-@import '../../components/Content/Content.css';
+@import '../../components/Content/Preview.css';
+@import '../../components/Content/Components.css';
 @import '../../components/Footer/Footer.css';
 @import '../../components/Container/Container.css';
 @import '../../components/Page/Page.css';
@@ -29,6 +30,15 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
 }
 
 .divider {

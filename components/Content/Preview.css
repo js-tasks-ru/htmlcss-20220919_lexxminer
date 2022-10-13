@@ -1,0 +1,9 @@
+.preview {
+    height: 1036px;
+    background: #F9FAFC;
+}
+
+.preview_detail {
+    background: #F9FAFC;
+    flex-grow: 1;
+}
