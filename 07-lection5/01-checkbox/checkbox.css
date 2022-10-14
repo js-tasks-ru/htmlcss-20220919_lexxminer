@@ -65,3 +65,7 @@
   /* Gray 2 */
   color: var(--grey-2);
 }
+
+.checkbox__input:focus ~ .checkbox__title {
+  text-decoration: underline;
+}
