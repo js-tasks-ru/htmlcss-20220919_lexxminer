@@ -68,3 +68,7 @@
   /* Gray 2 */
   color: var(--grey-2);
 }
+
+.radio__input:focus ~ .radio__title {
+  text-decoration: underline;
+}
