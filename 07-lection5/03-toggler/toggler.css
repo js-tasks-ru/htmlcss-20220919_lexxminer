@@ -75,3 +75,7 @@
 .toggle__input:disabled ~ .toggle__title {
     color: var(--grey-2);
 }
+
+.toggle__input:focus ~ .toggle__title {
+    text-decoration: underline;
+}
