@@ -17,9 +17,9 @@
   align-items: center;
   width: 28px;
   height: 28px;
-  background: #ffffff;
+  background: var(--white);
   /* Gray 2 */
-  border: 2px solid #dde2e5;
+  border: 2px solid var(--grey-2);
   border-radius: 14px;
 }
 
@@ -30,7 +30,7 @@
   height: 18px;
 
   /* Blue */
-  background: #4263eb;
+  background: var(--blue-secondary);
   border-radius: 14px;
 }
 
@@ -46,11 +46,11 @@
 
   /* Gray 4 */
 
-  color: #495057;
+  color: var(--grey-4);
 }
 
 .radio__input:checked ~ .radio__control {
-  border-color: #4263eb;
+  border-color: var(--blue-secondary);
 }
 .radio__input:checked ~ .radio__control .radio__icon {
   display: block;
@@ -58,7 +58,7 @@
 
 .radio__input:disabled ~ .radio__control {
   /* Gray 2 */
-  background: #dde2e5;
+  background: var(--grey-2);
   border: 0;
   border-radius: 14px;
 }
@@ -66,5 +66,5 @@
 .radio__input:disabled ~ .radio__title {
   /* Disabled */
   /* Gray 2 */
-  color: #dde2e5;
+  color: var(--grey-2);
 }
