@@ -21,20 +21,35 @@
   width: 28px;
   height: 28px;
 
-  background: #ffffff;
+  background: var(--white);
   /* Gray 2 */
-  border: 1px solid #dde2e5;
+  border: 1px solid var(--grey-2);
   border-radius: 4px;
 }
 
 .checkbox__icon {
-    display: none;
+  display: none;
+}
+
+.checkbox__title {
+  /* p */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Gray 4 */
+
+  color: var(--grey-4);
 }
 
 .checkbox__input:checked ~ .checkbox__control {
   /* Blue */
-  border: 1px solid #4263eb;
-  background: #4263eb;
+  border: 0;
+  background: var(--blue-secondary);
 }
 
 .checkbox__input:checked ~ .checkbox__control .checkbox__icon {
@@ -43,5 +58,10 @@
 
 .checkbox__input:disabled ~ .checkbox__control {
   /* Gray 2 */
-  background: #dde2e5;
+  background: var(--grey-2)
+}
+
+.checkbox__input:disabled ~ .checkbox__title {
+  /* Gray 2 */
+  color: var(--grey-2);
 }
