@@ -1,0 +1,77 @@
+.toggle {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle__input {
+    position: absolute;
+    appearance: none;
+}
+
+.toggle__control {
+    box-sizing: border-box;
+    position: relative;
+
+    width: 52px;
+    height: 28px;
+    
+    background: var(--white);
+    /* Gray 2 */
+    
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+}
+
+.toggle__icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    top: calc(50% - 24px/2);
+    
+    /* Gray 2 */
+    
+    background: var(--grey-2);
+    border-radius: 16px;
+}
+
+.toggle__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* Gray 4 */
+    
+    color: var(--grey-4);
+}
+
+.toggle__input:checked ~ .toggle__control {
+    background: var(--blue-secondary);
+    border: 0;
+}
+
+.toggle__input:checked ~ .toggle__control .toggle__icon {
+    background: var(--white);
+    left: 26px;
+}
+
+.toggle__input:disabled ~ .toggle__control {
+    background: var(--grey-2);
+    border: 0;
+}
+
+.toggle__input:disabled ~ .toggle__control .toggle__icon {
+    background: var(--grey-3);
+}
+
+.toggle__input:disabled ~ .toggle__title {
+    color: var(--grey-2);
+}
