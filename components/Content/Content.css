@@ -1,4 +1,13 @@
 .preview {
-    height: 1036px;
     background: #F9FAFC;
+    padding-bottom: 67px;
+}
+
+.preview__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 67px;
+    /* margin-bottom: 67px; */ 
+    /* выпадает этот отступ, вместо марджина здесь задал паддинг в .pewview выше */
 }

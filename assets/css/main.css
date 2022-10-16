@@ -1,6 +1,7 @@
 @import '../fonts/fonts.css';
 @import '../../components/Header/Header.css';
 @import '../../components/Content/Content.css';
+@import '../../components/Content/Card/Card.css';
 @import '../../components/Footer/Footer.css';
 @import '../../components/Container/Container.css';
 @import '../../components/Page/Page.css';
