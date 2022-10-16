@@ -1,6 +1,7 @@
 .preview {
     background: #F9FAFC;
     padding-bottom: 22px;
+    flex-grow: 1;
 }
 
 .preview_detail {
@@ -21,6 +22,7 @@
     .preview {
         background: #F9FAFC;
         padding-bottom: 67px;
+        flex-grow: 1;
     }
     
     .preview_detail {
