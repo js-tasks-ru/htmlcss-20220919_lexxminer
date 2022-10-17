@@ -20,6 +20,7 @@
     justify-content: flex-start;
     gap: 16px;
     flex-basis: content;
+    align-items: center;
 }
 
 .skeleton__avatar {
@@ -34,11 +35,9 @@
     flex-direction: column;
     flex-grow: 1;
     gap: 8px;
-    margin: 8px 0;
 }
 
 .skeleton__row {
-    flex-grow: 1;
     background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-aux-1) 38.47%, var(--grey-aux-2) 56.48%, var(--grey-aux-3) 77.5%, var(--grey-2) 102.52%);
     height: 20px;
 }
