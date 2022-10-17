@@ -1,7 +1,7 @@
 (function() {
-    const close = document.getElementById('modal-close');
-    const modal = document.getElementById('modal');
-    const modalOpen = document.getElementById('modal-open');
+    const close = document.getElementById('modal__close');
+    const modal = document.querySelector('.modal')
+    const modalOpen = document.getElementById('modal__open');
 
     if (!close || !modalOpen || !modal) {
         return;
