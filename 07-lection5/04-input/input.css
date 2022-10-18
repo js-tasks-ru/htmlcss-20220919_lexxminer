@@ -1,44 +1,23 @@
-.input__label {
-  /* h5 */
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  /* identical to box height, or 150% */
-
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  /* Gray 3 */
-
-  color: var(--grey-3);
-}
 
 .input {
+  position: relative;
+  max-width: fit-content;
 }
 
 .input__control {
   box-sizing: border-box;
   width: 350px;
-  height: 56px;
+
+  padding: 16px 40px 16px 24px;
 
   background: var(--white);
   /* Gray 2 */
 
+  outline: none;
+
+
   border: 1px solid var(--grey-2);
   border-radius: 8px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 24px;
-  padding-right: 18px;
-}
-
-.input__value {
-  /* h4 */
 
   font-family: 'Inter';
   font-style: normal;
@@ -51,33 +30,35 @@
   color: var(--grey-4);
 }
 
-.input__value_placeholder {
+
+
+.input__control::placeholder {
   color: var(--grey-2);
 }
 
 .input__state-icon {
   width: 24px;
   height: 24px;
-}
-
-.input__default-field {
   position: absolute;
-  outline: none;
-  clip: rect(0, 0, 0, 0);
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.input__default-field_invalid ~ .input__control .input__state-icon {
+
+
+.input__control_invalid ~ .input__state-icon {
   content: url('./public/error.svg');
 }
 
-.input__default-field_success ~ .input__control .input__state-icon {
+.input__control_success ~ .input__state-icon {
   content: url('./public/success.svg');
 }
 
-.input__default-field:focus ~ .input__control {
+.input__control:focus {
   border-color: var(--blue-secondary);
 }
 
-.input__default-field_invalid:focus ~ .input__control {
+.input__control_invalid:focus {
   border-color: var(--red);
 }

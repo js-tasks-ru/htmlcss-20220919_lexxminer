@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./input.css" />
     <style>
       .title {
-        margin-bottom: 12px;
+        display: inline-block;
+        margin-bottom: 4px;
 
         font-family: 'Inter';
         font-style: normal;
@@ -22,60 +23,47 @@
       }
 
       .wrapper {
+        width: fit-content;
         display: grid;
-        grid-template-rows: 90px 90px;
-        grid-template-columns: 350px 350px;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
         gap: 16px 30px;
+      }
+
+      .input__wrapper {
+        width: fit-content;
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
-        <div class="default-input">
-            <div class="title">LABEL</div>
-            <label class="input">
-              <input type="text" class="input__default-field" />
-              <div class="input__control">
-                <div class="input__value input__value_placeholder">Placeholder</div>
-                <div class="input__state-icon"></div>
-              </div>
-            </label>
+          <div class="input__wrapper">
+            <label for="default-input" class="title">Default</label>
+            <div class="input">
+              <input type="text" id="default-input" class="input__control" placeholder="Placeholder">
+              <div class="input__state-icon"></div>
+            </div>
           </div>
-          <div class="success-input">
-              <div class="title">Success</div>
-              <label class="input">
-                <input
-                  type="text"
-                  class="input__default-field input__default-field_success"
-                />
-                <div class="input__control">
-                  <div class="input__value input__value">Success</div>
-                  <div class="input__state-icon"></div>
-                </div>
-              </label>
+          <div class="input__wrapper">
+            <label for="focus-input" class="title">Focus</label>
+            <div class="input">
+              <input type="text" id="focus-input" class="input__control" value="Filled input">
+              <div class="input__state-icon"></div>
+            </div>
           </div>
-          <div class="focus-input">
-              <div class="title">Focus</div>
-              <label class="input">
-                <input type="text" class="input__default-field" />
-                <div class="input__control">
-                  <div class="input__value">Filled input</div>
-                  <div class="input__state-icon"></div>
-                </div>
-              </label>
+          <div class="input__wrapper">
+            <label for="success-input" class="title">Success</label>
+            <div class="input">
+              <input type="text" id="success-input" class="input__control input__control_success" value="Success">
+              <div class="input__state-icon"></div>
+            </div>
           </div>
-          <div class="invalid-input">
-              <div class="title">Error</div>
-              <label class="input input_invalid">
-                <input
-                  type="text"
-                  class="input__default-field input__default-field_invalid"
-                />
-                <div class="input__control">
-                  <div class="input__value">Error</div>
-                  <div class="input__state-icon"></div>
-                </div>
-              </label>
+          <div class="input__wrapper">
+            <label for="error-input" class="title">Error</label>
+            <div class="input">
+              <input type="text" id="error-input" class="input__control input__control_invalid" value="Error">
+              <div class="input__state-icon"></div>
+            </div>
           </div>
     </div>
   </body>
