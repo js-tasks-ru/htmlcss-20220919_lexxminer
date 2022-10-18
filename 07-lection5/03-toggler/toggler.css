@@ -1,5 +1,4 @@
 .toggle {
-  margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -7,7 +6,8 @@
 
 .toggle__input {
     position: absolute;
-    appearance: none;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
 }
 
 .toggle__control {
