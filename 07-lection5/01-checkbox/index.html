@@ -23,13 +23,16 @@
 
       .checkboxes {
         width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
       }
     </style>
   </head>
   <body>
+    <div class="title">CHECKBOX</div>
     <form action="" class="checkboxes">
       <!-- форм враппер для того, чтобы ограничить ширину блока (чтобы чекбокс активировался непосредственно кликом на лейбл) -->
-      <div class="title">CHECKBOX</div>
       <label class="checkbox">
         <input type="checkbox" class="checkbox__input" />
         <div class="checkbox__control">

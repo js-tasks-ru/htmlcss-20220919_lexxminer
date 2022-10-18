@@ -1,13 +1,13 @@
 .checkbox {
-  margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
 .checkbox__input {
-  appearance: none;
   position: absolute;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
 }
 
 .checkbox__control {
