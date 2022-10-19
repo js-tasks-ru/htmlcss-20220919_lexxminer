@@ -1,0 +1,114 @@
+.components {
+  
+}
+
+.components__list {
+  display: none;
+}
+
+.components__description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0;
+}
+
+.component__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height, or 130% */
+
+  /* Gray 4 */
+
+  color: #495057;
+}
+
+.component__preview {
+  margin-top: 20px;
+  height: 180px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 1280px) {
+  
+
+  .components {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    display: grid;
+    grid-template-columns: 229px 1fr;
+    flex-shrink: 0;
+  }
+
+  .components__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .components__title {
+    margin-bottom: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+    color: var(--black);
+  }
+
+  .components__component {
+    margin-top: 4px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    /* Black */
+
+    color: var(--black);
+  }
+
+  .components__component:hover {
+    color: var(--red);
+  }
+
+  .components__component_selected {
+    color: var(--red);
+  }
+
+  .components_to-main-page {
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    /* Black */
+    color: var(--black);
+  }
+
+  .components_to-main-page:hover {
+    color: var(--red);
+  }
+
+  .components__description {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    padding: 32px 48px;
+  }
+}
