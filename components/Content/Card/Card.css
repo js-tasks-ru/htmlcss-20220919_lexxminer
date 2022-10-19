@@ -1,6 +1,8 @@
 .card {
   min-width: 164px;
+  padding: 8px;
   display: grid;
+  gap: 8px;
   grid-template-rows: 1fr auto;
 
   background: #ffffff;
@@ -12,7 +14,6 @@
 
 .card__content {
   box-sizing: border-box;
-  padding: 10%;
 }
 
 .card__footer {
@@ -37,7 +38,14 @@
 
 .card__type {
   color: var(--grey-3);
-  margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
 }
 
 .card__link {
@@ -45,12 +53,50 @@
   display: block;
   position: relative;
   padding-bottom: 100%;
+
+  color: #000 !important;
+  text-decoration: none
 }
 
 .card__img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.card__calendar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+}
+
+.card__histogram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: fit-content;
+}
+
+.card__tooltip-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__modal-preview-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
 }
@@ -62,19 +108,15 @@
 .card__img_avatar {
   object-fit: cover;
   border-radius: 50%;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 @media screen and (min-width: 1280px) {
   .card {
     min-width: 350px;
-    display: grid;
-    grid-template-rows: 1fr auto;
-
-    background: #ffffff;
-    /* Card Shadow */
-
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
+    padding: 32px;
+    gap: 32px;
   }
   .card__footer {
     font-family: 'Roboto';
@@ -92,11 +134,14 @@
   }
 
   .card__title {
-    margin: 30px 0;
+    margin-top: 25px;
+  }
+
+  .card__type {
+    margin-top: 6px;
   }
 
   .card__content {
     box-sizing: border-box;
-    padding: 10%;
   }
 }
