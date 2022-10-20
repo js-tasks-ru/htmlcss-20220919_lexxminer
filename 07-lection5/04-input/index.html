@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <style>
+      .title {
+        display: inline-block;
+        margin-bottom: 4px;
 
-    </body>
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height, or 150% */
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        /* Gray 3 */
+        color: #acb5bd;
+      }
+
+      .wrapper {
+        width: fit-content;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        gap: 16px 30px;
+      }
+
+      .input__wrapper {
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+          <div class="input__wrapper">
+            <label for="default-input" class="title">Default</label>
+            <div class="input">
+              <input type="text" id="default-input" class="input__control" placeholder="Placeholder">
+              <div class="input__state-icon"></div>
+            </div>
+          </div>
+          <div class="input__wrapper">
+            <label for="focus-input" class="title">Focus</label>
+            <div class="input">
+              <input type="text" id="focus-input" class="input__control" value="Filled input">
+              <div class="input__state-icon"></div>
+            </div>
+          </div>
+          <div class="input__wrapper">
+            <label for="success-input" class="title">Success</label>
+            <div class="input">
+              <input type="text" id="success-input" class="input__control input__control_success" value="Success">
+              <div class="input__state-icon"></div>
+            </div>
+          </div>
+          <div class="input__wrapper">
+            <label for="error-input" class="title">Error</label>
+            <div class="input">
+              <input type="text" id="error-input" class="input__control input__control_invalid" value="Error">
+              <div class="input__state-icon"></div>
+            </div>
+          </div>
+    </div>
+  </body>
 </html>

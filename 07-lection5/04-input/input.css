@@ -1,0 +1,64 @@
+
+.input {
+  position: relative;
+  max-width: fit-content;
+}
+
+.input__control {
+  box-sizing: border-box;
+  width: 350px;
+
+  padding: 16px 40px 16px 24px;
+
+  background: var(--white);
+  /* Gray 2 */
+
+  outline: none;
+
+
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height, or 130% */
+  /* Gray 2 */
+
+  color: var(--grey-4);
+}
+
+
+
+.input__control::placeholder {
+  color: var(--grey-2);
+}
+
+.input__state-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.input__control_invalid ~ .input__state-icon {
+  content: url('./public/error.svg');
+}
+
+.input__control_success ~ .input__state-icon {
+  content: url('./public/success.svg');
+}
+
+.input__control:focus {
+  border-color: var(--blue-secondary);
+}
+
+.input__control_invalid:focus {
+  border-color: var(--red);
+}
