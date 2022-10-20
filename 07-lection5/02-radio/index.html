@@ -4,8 +4,78 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+            .title {
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 18px;
+              /* identical to box height, or 150% */
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+      
+              /* Gray 3 */
+              color: #acb5bd;
+            }
+      
+            .radios {
+              width: fit-content;
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              margin-bottom: 12px;
+            }
+          </style>
     </head>
     <body>
-
+        <form action="" class="radios">
+            <div class="title">RADIO BUTTON</div>
+            <label class="radio">
+                <input type="radio" name="radio" id="" class="radio__input">
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Default</div>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" id="" class="radio__input" checked>
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Selected</div>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" id="" class="radio__input" disabled>
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Disabled</div>
+            </label>
+        </form>
+        <form action="" class="radios">
+            <div class="title">RADIO BUTTON</div>
+            <label class="radio">
+                <input type="radio" name="radioSecond" id="" class="radio__input">
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Default</div>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radioSecond" id="" class="radio__input" checked>
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Selected</div>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radioSecond" id="" class="radio__input" disabled>
+                <div class="radio__control">
+                    <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Disabled</div>
+            </label>
+        </form>
     </body>
 </html>
